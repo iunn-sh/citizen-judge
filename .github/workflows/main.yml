@@ -18,7 +18,7 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-            npm install -g @marp-team/marp-cli @4.1.2
+            npm install -g @marp-team/marp-cli@4.1.2
             marp --theme themes/academic.css presentation.md -o index.html
             mv index.html public
 
