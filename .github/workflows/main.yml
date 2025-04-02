@@ -16,25 +16,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Ensure build dir exists
-        run: mkdir -p build
+      - name: Install and Build 🔧
+        run: |
+            npx @marp-team/marp-cli@4.1.2 presentation.md -o index.html
+            cp themes/academic.css presentation/themes/
+            mv presentation public
 
-      - name: Copy images directory (if exists)
-        run: if [[ -d img ]]; then cp -R img build/img; fi
-
-      - name: Copy themes directory (if exists)
-        run: if [[ -d themes ]]; then cp -R themes build/themes; fi
-
-      - name: Marp Build (presentation.md)
-        uses: docker://marpteam/marp-cli:v4.1.2
-        with:
-          args: presentation.md -o build/index.html
-        env:
-          MARP_USER: root:root
-
-      - name: Deploy to Github Pages
-        if: ${{ github.event_name == 'push' }}
+      - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages
-          folder: ./build/
+          folder: public # The folder the action should deploy.
