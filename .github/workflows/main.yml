@@ -18,9 +18,9 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-            npx @marp-team/marp-cli@4.1.2 presentation.md -o index.html
-            cp themes/academic.css presentation/themes/
-            mv presentation public
+            npm install -g @marp-team/marp-cli @4.1.2
+            marp --theme themes/academic.css presentation.md -o index.html
+            mv index.html public
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
