@@ -10,5 +10,5 @@
 brew install marp-cli
 
 # preview
-marp --browser firefox --server ./
+marp --theme themes/academic.css --browser firefox --server ./
 ```
