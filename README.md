@@ -13,5 +13,5 @@ brew install marp-cli
 marp --server ./
 
 # export
-marp --theme themes/academic.css presentation.md -o index.html
+marp --theme themes/academic.css presentation.md
 ```
