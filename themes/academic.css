@@ -75,6 +75,10 @@ header {
   font-weight: 700;
 }
 
+footer {
+  font-weight: 300;
+}
+
 blockquote {
   max-width: 90%;
   border-top: 0.1em dashed #555;

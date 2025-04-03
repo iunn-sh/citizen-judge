@@ -6,16 +6,16 @@ math: katex
 ---
 
 <!-- _class: lead -->
+<!-- _paginate: false -->
+<!-- _footer: Photo by [Liane Metzler](https://unsplash.com/@liane) on [Unsplash](https://unsplash.com/photos/white-stair-stepper-v3bWNXeInQA) -->
+      
+![bg](https://images.unsplash.com/photo-1476635243339-c8d9e8778218)
 
-# Marpで研究室の発表スライドを作る
+# 模擬法庭
 
-#### 〜Beamerを卒業しよう〜
+#### 國民法官法
 
-<br>
-
-**著者 太郎**
-ほげほげ研究室 M2
-YYYY/MM/DD
+人／事／時／地／物
 
 ---
 
