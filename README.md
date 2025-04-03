@@ -10,5 +10,8 @@
 brew install marp-cli
 
 # preview
-marp --theme themes/academic.css --browser firefox --server ./
+marp --server ./
+
+# export
+marp --theme themes/academic.css presentation.md -o index.html
 ```
