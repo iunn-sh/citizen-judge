@@ -3,6 +3,7 @@ marp: true
 theme: academic
 paginate: true
 math: katex
+title: 模擬法庭
 ---
 
 <!-- _class: lead -->
